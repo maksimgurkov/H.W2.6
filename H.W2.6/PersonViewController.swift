@@ -12,6 +12,7 @@ class PersonViewController: UIViewController {
     // MARK: - IBOutlet
     @IBOutlet weak var personNameLabel: UILabel!
     
+    // MARK: Public Propertis
     var login = ""
     
     // MARK: - Override Function
@@ -20,8 +21,4 @@ class PersonViewController: UIViewController {
         personNameLabel.text = "Привет \(login)"
     }
     
-    //MARK: - IBAction
-    @IBAction func actionLogOutButton() {
-        dismiss(animated: true)
-    }
 }
