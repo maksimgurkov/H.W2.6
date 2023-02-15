@@ -38,7 +38,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="actionLogOutButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="2QM-Je-jwd"/>
-                                            <segue destination="LBY-TW-K8N" kind="presentation" identifier="personVC" modalPresentationStyle="fullScreen" id="2Km-Q0-J12"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="GVh-Sb-Qc8">
@@ -49,15 +48,15 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot User Name"/>
                                                 <connections>
-                                                    <action selector="actionForgotUserNameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="mqC-4S-Rcg"/>
+                                                    <action selector="actionForgotUserNameAndPasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mns-Im-qIB"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9p-U7-38k">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9p-U7-38k">
                                                 <rect key="frame" x="189.66666666666663" y="0.0" width="163.33333333333337" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password"/>
                                                 <connections>
-                                                    <action selector="actionForgotPasswordButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="FrK-OZ-MKa"/>
+                                                    <action selector="actionForgotUserNameAndPasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WV2-rf-gXK"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -77,6 +76,7 @@
                         <outlet property="logInButton" destination="WCo-Wr-Yr0" id="SnV-JX-2z2"/>
                         <outlet property="nameTextField" destination="FR7-dk-Skg" id="2Jy-rs-Rhz"/>
                         <outlet property="passwordTextField" destination="6uG-I8-s4K" id="uJA-42-VNx"/>
+                        <segue destination="LBY-TW-K8N" kind="presentation" identifier="go" id="Cat-dM-PFe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -86,7 +86,7 @@
         <!--Person View Controller-->
         <scene sceneID="HSe-vN-HIH">
             <objects>
-                <viewController id="LBY-TW-K8N" customClass="PersonViewController" customModule="H_W2_6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="LBY-TW-K8N" customClass="PersonViewController" customModule="H_W2_6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7N2-nc-mDh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
