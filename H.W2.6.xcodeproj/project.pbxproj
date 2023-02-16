@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7652EFF0299A09B900F5F5BF /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7652EFEF299A09B900F5F5BF /* PersonViewController.swift */; };
+		7652EFF0299A09B900F5F5BF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7652EFEF299A09B900F5F5BF /* WelcomeViewController.swift */; };
 		7661A2AD299A05C300D730B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661A2AC299A05C300D730B7 /* AppDelegate.swift */; };
 		7661A2AF299A05C300D730B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661A2AE299A05C300D730B7 /* SceneDelegate.swift */; };
 		7661A2B1299A05C300D730B7 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661A2B0299A05C300D730B7 /* AuthorizationViewController.swift */; };
 		7661A2B4299A05C300D730B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7661A2B2299A05C300D730B7 /* Main.storyboard */; };
 		7661A2B6299A05C400D730B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7661A2B5299A05C400D730B7 /* Assets.xcassets */; };
 		7661A2B9299A05C400D730B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7661A2B7299A05C400D730B7 /* LaunchScreen.storyboard */; };
+		7698D5CF299E2F5C0006D2A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698D5CE299E2F5C0006D2A3 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7652EFEF299A09B900F5F5BF /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		7652EFEF299A09B900F5F5BF /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		7661A2A9299A05C300D730B7 /* H.W2.6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H.W2.6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7661A2AC299A05C300D730B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7661A2AE299A05C300D730B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +27,7 @@
 		7661A2B5299A05C400D730B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7661A2B8299A05C400D730B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7661A2BA299A05C400D730B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7698D5CE299E2F5C0006D2A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,49 @@
 		7661A2AB299A05C300D730B7 /* H.W2.6 */ = {
 			isa = PBXGroup;
 			children = (
-				7661A2AC299A05C300D730B7 /* AppDelegate.swift */,
-				7661A2AE299A05C300D730B7 /* SceneDelegate.swift */,
-				7661A2B0299A05C300D730B7 /* AuthorizationViewController.swift */,
-				7652EFEF299A09B900F5F5BF /* PersonViewController.swift */,
-				7661A2B2299A05C300D730B7 /* Main.storyboard */,
+				7698D5CD299E2F350006D2A3 /* Model */,
+				7698D5CA299E2D470006D2A3 /* App */,
+				7698D5CB299E2DBE0006D2A3 /* ViewControllers */,
+				7698D5CC299E2DDD0006D2A3 /* StoryBoard */,
 				7661A2B5299A05C400D730B7 /* Assets.xcassets */,
-				7661A2B7299A05C400D730B7 /* LaunchScreen.storyboard */,
-				7661A2BA299A05C400D730B7 /* Info.plist */,
 			);
 			path = H.W2.6;
+			sourceTree = "<group>";
+		};
+		7698D5CA299E2D470006D2A3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7661A2AC299A05C300D730B7 /* AppDelegate.swift */,
+				7661A2AE299A05C300D730B7 /* SceneDelegate.swift */,
+				7661A2BA299A05C400D730B7 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7698D5CB299E2DBE0006D2A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7661A2B0299A05C300D730B7 /* AuthorizationViewController.swift */,
+				7652EFEF299A09B900F5F5BF /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7698D5CC299E2DDD0006D2A3 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7661A2B2299A05C300D730B7 /* Main.storyboard */,
+				7661A2B7299A05C400D730B7 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		7698D5CD299E2F350006D2A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7698D5CE299E2F5C0006D2A3 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +179,8 @@
 				7661A2B1299A05C300D730B7 /* AuthorizationViewController.swift in Sources */,
 				7661A2AD299A05C300D730B7 /* AppDelegate.swift in Sources */,
 				7661A2AF299A05C300D730B7 /* SceneDelegate.swift in Sources */,
-				7652EFF0299A09B900F5F5BF /* PersonViewController.swift in Sources */,
+				7698D5CF299E2F5C0006D2A3 /* User.swift in Sources */,
+				7652EFF0299A09B900F5F5BF /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N85MKK397C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = H.W2.6/Info.plist;
+				INFOPLIST_FILE = H.W2.6/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,7 +360,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N85MKK397C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = H.W2.6/Info.plist;
+				INFOPLIST_FILE = H.W2.6/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
