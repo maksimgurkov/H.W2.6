@@ -15,6 +15,8 @@
 		7661A2B6299A05C400D730B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7661A2B5299A05C400D730B7 /* Assets.xcassets */; };
 		7661A2B9299A05C400D730B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7661A2B7299A05C400D730B7 /* LaunchScreen.storyboard */; };
 		7698D5CF299E2F5C0006D2A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698D5CE299E2F5C0006D2A3 /* User.swift */; };
+		7698D5D1299E33D60006D2A3 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698D5D0299E33D60006D2A3 /* PersonInfoViewController.swift */; };
+		7698D5D3299E512E0006D2A3 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698D5D2299E512E0006D2A3 /* WorkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		7661A2B8299A05C400D730B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7661A2BA299A05C400D730B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7698D5CE299E2F5C0006D2A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7698D5D0299E33D60006D2A3 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		7698D5D2299E512E0006D2A3 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 			children = (
 				7661A2B0299A05C300D730B7 /* AuthorizationViewController.swift */,
 				7652EFEF299A09B900F5F5BF /* WelcomeViewController.swift */,
+				7698D5D0299E33D60006D2A3 /* PersonInfoViewController.swift */,
+				7698D5D2299E512E0006D2A3 /* WorkViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -177,9 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7661A2B1299A05C300D730B7 /* AuthorizationViewController.swift in Sources */,
+				7698D5D1299E33D60006D2A3 /* PersonInfoViewController.swift in Sources */,
 				7661A2AD299A05C300D730B7 /* AppDelegate.swift in Sources */,
 				7661A2AF299A05C300D730B7 /* SceneDelegate.swift in Sources */,
 				7698D5CF299E2F5C0006D2A3 /* User.swift in Sources */,
+				7698D5D3299E512E0006D2A3 /* WorkViewController.swift in Sources */,
 				7652EFF0299A09B900F5F5BF /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

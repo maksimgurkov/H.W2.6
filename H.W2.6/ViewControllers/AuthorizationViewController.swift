@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthorizationViewController: UIViewController {
+final class AuthorizationViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet weak var logInButton: UIButton!
@@ -43,6 +43,9 @@ class AuthorizationViewController: UIViewController {
         for viewController in viewControllers {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.person = user.person
+            } else if let navigationVC = viewController as? UINavigationController {
+                guard let personInfoVC = navigationVC.topViewController as? PersonInfoViewController else { return }
+                personInfoVC.person = user.person
             }
         }
     }
