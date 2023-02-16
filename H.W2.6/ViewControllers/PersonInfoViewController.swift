@@ -42,11 +42,8 @@ final class PersonInfoViewController: UIViewController {
         telegramPersonLabel.text = person.telegram
         emailPersonLabel.text = person.email
     }
-    
 
-    
     // MARK: - Navigation
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let workVC = segue.destination as? WorkViewController else { return }
         workVC.person = person
